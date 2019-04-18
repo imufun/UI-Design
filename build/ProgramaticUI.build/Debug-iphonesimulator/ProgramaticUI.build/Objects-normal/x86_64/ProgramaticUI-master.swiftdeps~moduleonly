@@ -1,0 +1,7 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "4ae79559916bed95dca9244bffcf1dff"
+build_time: [1555571216, 506908000]
+inputs:
+  "/Users/sinbad/Desktop/IOS/ProgramaticUI/ProgramaticUI/DetailsPage.swift": [1555571212, 0]
+  "/Users/sinbad/Desktop/IOS/ProgramaticUI/ProgramaticUI/ViewController.swift": [1555566748, 0]
+  "/Users/sinbad/Desktop/IOS/ProgramaticUI/ProgramaticUI/AppDelegate.swift": [1555564155, 0]
