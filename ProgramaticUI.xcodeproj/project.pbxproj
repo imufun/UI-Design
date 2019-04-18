@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A11B21612268FA070092F269 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11B21602268FA070092F269 /* SplashScreen.swift */; };
+		A11B21632268FFF30092F269 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11B21622268FFF30092F269 /* extensions.swift */; };
 		A1AD64D02266F18700043E29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD64CF2266F18700043E29 /* AppDelegate.swift */; };
 		A1AD64D22266F18700043E29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD64D12266F18700043E29 /* ViewController.swift */; };
 		A1AD64D52266F18700043E29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AD64D32266F18700043E29 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A11B21602268FA070092F269 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		A11B21622268FFF30092F269 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		A1AD64CC2266F18700043E29 /* ProgramaticUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgramaticUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AD64CF2266F18700043E29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1AD64D12266F18700043E29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				A1AD64D62266F1CD00043E29 /* Assets.xcassets */,
 				A1AD64D82266F1CD00043E29 /* LaunchScreen.storyboard */,
 				A1AD64DB2266F1CD00043E29 /* Info.plist */,
+				A11B21602268FA070092F269 /* SplashScreen.swift */,
+				A11B21622268FFF30092F269 /* extensions.swift */,
 			);
 			path = ProgramaticUI;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A11B21632268FFF30092F269 /* extensions.swift in Sources */,
+				A11B21612268FA070092F269 /* SplashScreen.swift in Sources */,
 				A1AD64E222683FBE00043E29 /* DetailsPage.swift in Sources */,
 				A1AD64D22266F18700043E29 /* ViewController.swift in Sources */,
 				A1AD64D02266F18700043E29 /* AppDelegate.swift in Sources */,

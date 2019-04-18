@@ -39,6 +39,8 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
         
         let sendButton:UIButton = UIButton(type: .system)
+        let pushButton:UIButton = UIButton(type: .system)
+        
         sendButton.setTitle("Send", for: .normal)
         sendButton.backgroundColor = .red
         sendButton.layer.cornerRadius = 8
@@ -48,13 +50,34 @@ class ViewController: UIViewController {
         sendButton.addTarget(self, action: #selector(handleSendButton), for: .touchUpInside)
         view.addSubview(sendButton)
         sendButton.center = self.view.center
+        
+        
+        
+        pushButton.setTitle("Next", for: .normal)
+        pushButton.backgroundColor = .red
+        pushButton.layer.cornerRadius = 8
+        pushButton.layer.borderWidth = 1
+        pushButton.layer.borderColor = UIColor.green.cgColor
+        pushButton.translatesAutoresizingMaskIntoConstraints = false
+        pushButton.addTarget(self, action: #selector(handleSendPush), for: .touchUpInside)
+        view.addSubview(pushButton)
+        pushButton.center = self.view.center
+        
+        
+        
        // sendButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 150)
         
         self.view.addConstraints([
             sendButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-              sendButton.centerYAnchor.constraint(equalTo: view.centerYAnchor), 
+            sendButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             sendButton.widthAnchor.constraint(equalToConstant: 200),
             sendButton.heightAnchor.constraint(equalToConstant: 40),
+            
+            pushButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            pushButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            pushButton.topAnchor.constraint(equalTo: sendButton.bottomAnchor, constant: 20),
+            pushButton.widthAnchor.constraint(equalToConstant: 200),
+            pushButton.heightAnchor.constraint(equalToConstant: 40),
             
             ])
         
@@ -77,6 +100,12 @@ class ViewController: UIViewController {
         let details = DetailsPage()
         self.navigationController?.pushViewController(details, animated: true)
     }
+    
+    @objc func handleSendPush(){
+        let newVC = SplashScreen()
+        self.present(newVC, animated: true, completion: nil)
+    }
+    
     
     @objc func handleColorBtn(sender:UIButton){
         if sender.titleLabel?.text != nil {
